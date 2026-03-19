@@ -12,37 +12,37 @@ import Products from '../components/Products.astro';
 ---
 
 <Layout>
-	<section id="hero" class="section bg-[url('../abstract.webp')] bg-cover bg-center bg-no-repeat h-screen w-screen items-center justify-center flex text-[var(--color-secundary)] z-1 ">
+	<section id="hero" class="section h-auto md:h-screen w-screen items-center justify-center flex  z-1 ">
 		<Hero />
 	</section>
 
-	<section id="about" class="section bg-[var(--color-primary)] md:h-screen md:w-screen flex text-white z-1">
+	<section id="about" class="section bg-[var(--color-primary)] md:h-auto md:w-screen flex  z-0">
 		<About />
 	</section>
 
-	<section id="section" class="section bg-[url('../abstract_invert.webp')] bg-cover bg-center bg-no-repeat h-screen w-screen flex items-center justify-center text-[var(--color-secundary)] z-1">
+	<section id="section" class="section bg-cover bg-center bg-no-repeat h-auto w-screen flex items-center justify-center z-1">
 		<Section />
-	</section>
-
-	<section id="section" class="section md:h-screen md:w-screen flex items-center justify-center text-[var(--color-secundary)] z-1">
-		<Products />
 	</section>
 
 	<section id="banner" class="section md:w-screen z-1">
 		<Banner />
 	</section>
 
+	<section id="section" class="section md:h-screen md:w-screen flex items-center justify-center z-1">
+		<Products />
+	</section>
+
 	<section id="extra" class="section md:h-screen md:w-screen bg-[url('../background.svg')] flex z-1">
 		<Extra />
 	</section>
 	
-	<section id="footer" class="section  bg-[var(--color-primary)] z-1">
+	<section id="footer" class="section bg-[var(--color-primary)] z-1">
 		<Footer />
 	</section>
 	
 	<button 
 		onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 
-		class="fixed bottom-4 right-4 bg-[var(--color-primary)] text-white px-4 py-2 rounded-t-2xl shadow-lg hover:bg-red-700 transition">
+		class="fixed bottom-4 right-4 border-1 border-[var(--color-secondary)] bg-[var(--color-primary)] text-[var(--color-secondary)] px-4 py-2 rounded-t-2xl shadow-lg z-20 hover:border-[var(--color-primary)] hover:bg-[var(--color-secondary)] hover:text-[var(--color-primary)] transition">
 		↑
 	</button>
 </Layout>

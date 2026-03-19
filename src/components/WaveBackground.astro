@@ -1,0 +1,36 @@
+---
+const { className = "" } = Astro.props;
+---
+
+<div class={`relative w-full min-h-screen overflow-hidden flex ${className}`}>
+  
+  <!-- CONTENIDO -->
+  <div class="relative z-10 w-screen flex items-center justify-center">
+    <slot />
+  </div>
+
+  <!-- Wave principal -->
+  <svg
+    class="absolute bottom-0 w-full z-0"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+  >
+    <path
+      fill="var(--color-primary)"
+      d="M0,256L60,240C120,224,240,192,360,186.7C480,181,600,203,720,208C840,213,960,203,1080,176C1200,149,1320,107,1380,85.3L1440,64V320H0Z"
+    />
+  </svg>
+
+  <!-- Wave secundaria -->
+  <svg
+    class="absolute bottom-6 w-full opacity-50 z-0"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+  >
+    <path
+      fill="var(--color-primary)"
+      d="M0,288L60,250C120,210,240,130,360,117.3C480,107,600,171,720,197.3C840,224,960,214,1080,197.3C1200,181,1320,160,1380,149.3L1440,139V320H0Z"
+    />
+  </svg>
+
+</div>

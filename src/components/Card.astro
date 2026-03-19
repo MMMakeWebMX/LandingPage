@@ -7,22 +7,23 @@ interface Props {
 
 const { href, title, img } = Astro.props;
 ---
-<article  class="snap-start relative flex flex-col  max-w-76 gap-2 md:gap-4 px-3 py-3 bg-[var(--color-primary)] backdrop-blur-md rounded-[20px] md:rounded-[30px] bg-gradient-to-b from-white/60 to-white/0" >
+<article  class="snap-start relative flex flex-col text-[var(--color-background)] max-w-76 gap-2 md:gap-4 px-3 py-3 bg-[var(--color-primary)] backdrop-blur-md rounded-lg bg-gradient-to-b from-white/60 to-white/0" >
     <div class="flex -mt-8 gap-2 justify-center ">
-        <img class="rounded-[20px] md:rounded-[30px] shadow-4xl h-56 xl:h-72 w-72" src={img} alt="Side Image" />
+        <img class="rounded-lg shadow-4xl h-56 xl:h-72 w-72" src={img} alt="Side Image" />
     </div>
-    <h2 class="text-2xl mt-3 font-bold text-white">
+    <h2 class="text-2xl font-bold text-[var(--color-secondary)]">
         {title}
     </h2>
-    <div class="flex grid-cols-2 items-center gap-2">
+    <div class="flex items-center gap-2">
+        <img class="border-6 -mb-10 -ml-10 border-[var(--color-background)] rounded-full h-20 w-20" src={img} alt="Side Image" />
         <div class="flex flex-row gap-2 justify-start items-center">
-            <img class="border-6 -mb-10 -ml-10 border-white rounded-[40px] h-20 w-20" src={img} alt="Side Image" />
-            <h2 class="text-base xl:text-lg text-white">
+            
+            <h2 class="text-base xl:text-lg">
                 This Services
             </h2>
         </div>
-        <div class="flex flex-wrap justify-end items-center">
-            <a href="#" class="bg-[var(--color-secundary)] bg-opacity-90 justify-items-center text-white rounded-lg p-2 hover:-translate-y-1 hover:delay-150 hover:scale-110 hover:bg-[#6d2b25]">
+        <div class="flex flex-wrap justify-end ml-auto">
+            <a href={href} class="bg-[var(--color-secondary)] bg-opacity-90 justify-items-center rounded-lg p-2 hover:-translate-y-1 hover:delay-150 hover:scale-110 hover:bg-[var(--color-background)] hover:text-[var(--color-secondary)] hover:bg-opacity-100 transition duration-300 flex items-center gap-1">
                 View
                 <span>&rarr;</span>
             </a>

@@ -1,0 +1,52 @@
+---
+const { className = "" } = Astro.props;
+---
+
+<div class={`relative w-full h-auto md:min-h-screen overflow-hidden ${className}`}>
+
+  <!-- 🧊 CONTENIDO -->
+  <div class="relative z-20 w-full items-center justify-center">
+    <slot />
+  </div>
+  <!-- 🔴 WAVE ARRIBA (transparente para mezclar) -->
+  <svg
+    class="absolute top-0 w-full scale-y-[-1] z-10 pointer-events-none"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+  >
+    <path
+      fill="var(--color-secondary)"
+      fill-opacity="0.15"
+      d="M0,256L60,240C120,224,240,192,360,186.7C480,181,600,203,720,208C840,213,960,203,1080,176C1200,149,1320,107,1380,85.3L1440,64V320H0Z"
+    />
+  </svg>
+
+  <!-- 🔴 WAVE MEDIA (decorativa en medio 🔥) -->
+  <svg
+    class="absolute top-1/2 -translate-y-1/2 w-full opacity-20 z-10 pointer-events-none"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+  >
+    <path
+      fill="var(--color-accent)"
+      fill-opacity="0.2"
+      d="M0,160L80,170C160,180,320,200,480,186.7C640,173,800,127,960,122.7C1120,117,1280,149,1360,165.3L1440,181V320H0Z"
+    />
+  </svg>
+
+  <!-- 🔴 WAVE ABAJO -->
+  <svg
+    class="absolute bottom-0 w-full z-10"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+  >
+    <path
+      fill="var(--color-secondary)"
+      fill-opacity="0.2"
+      d="M0,288L60,250C120,210,240,130,360,117.3C480,107,600,171,720,197.3C840,224,960,214,1080,197.3C1200,181,1320,160,1380,149.3L1440,139V320H0Z"
+    />
+  </svg>
+
+  
+
+</div>

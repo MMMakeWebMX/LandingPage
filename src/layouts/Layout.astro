@@ -14,7 +14,7 @@ import "../styles/global.css";
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<title>Web services</title>
 	</head>
-	<body class="bg-white">
+	<body>
 		<Header />
 		<slot />
 	</body>
@@ -30,5 +30,10 @@ import "../styles/global.css";
 
 	}
 
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: var(--color-background);
+	}
 	
 </style>
