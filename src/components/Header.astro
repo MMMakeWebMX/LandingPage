@@ -1,43 +1,43 @@
-<header id="main-header" class="flex flex-grow bg-opacity-15 md:bg-transparent hover:shadow-4xl items-center w-full fixed top-0 justify-between z-40 md:text-base 2xl:text-xl">
-    <div class="flex flex-grow justify-start basis-0 pl-5">
-        
+<header id="main-header" class="flex flex-grow bg-[var(--color-secondary)] bg-opacity-15 md:bg-transparent hover:shadow-4xl items-center w-full fixed top-0 justify-between z-40 text-xs 2xl:text-xl">
+    <div class="flex flex-grow justify-start basis-0 pl-5 w-20">
         <a href="/">
            <h1 class="font-bond md:text-base 2xl:text-xl"><strong>LOGO</strong></h1>
         </a>        
     </div>
   
     <!-- Desktop Menu -->
-    <div id="desktop-menu" class="lg:flex hidden flex-grow justify-end basis-5 pb-1 pr-10">
-      <ul class="flex [&>li>a]:inline-block [&>li>a]:px-8 [&>li>a]:py-1 shadow-4xl bg-[var(--color-secondary)] rounded-lg">
-        <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/">Home</a></li>
-        <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/">Blog</a></li>
-        <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/services">Services</a></li>
-        <li><a class="text-[var(--color-primary)] hover:rounded-lg hover:text-[var(--color-background)] hover:bg-[var(--color-primary)] hover:underline decoration-[var(--color-primary)]" href="/contact">Contact</a></li>
-      </ul>
+    <div class="flex bg-[var(--color-secondary)] items-center justify-center text-center rounded-lg p-1">
+        <div id="desktop-menu" class="lg:flex hidden flex-grow basis-5">
+            <ul class="flex [&>li>a]:inline-block [&>li>a]:px-8 [&>li>a]:py-1 shadow-4xl bg-[var(--color-secondary)] rounded-lg">
+                <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/">Home</a></li>
+                <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/blog">Blog</a></li>
+                <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/services">Services</a></li>
+                <li><a class="text-[var(--color-primary)] hover:rounded-lg hover:text-[var(--color-background)] hover:bg-[var(--color-primary)] hover:underline decoration-[var(--color-primary)]" href="/contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
   
     <!-- Mobile Toggle -->
     <div class="menu flex lg:hidden justify-end pr-5" onclick="window.openMenu()">
-        
-        <svg id="menu-icon" width="48px" height="48px" viewBox="0 0 2.4 2.4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path width="48" height="48" fill="white" fill-opacity="0.01" d="M0 0H2.4V2.4H0V0z"/>
+        <svg id="menu-icon" width="25px" height="25px" viewBox="0 0 2.4 2.4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path width="25" height="25" fill="white" fill-opacity="0.01" d="M0 0H2.4V2.4H0V0z"/>
             <path d="M1.85 0.9 1.25 1.5 0.65 0.9" stroke="#000000" stroke-width="0.2" stroke-linecap="round" class="block" stroke-linejoin="round"/>
         </svg>
 
-        <svg id="close-icon" width="48px" height="48px" viewBox="0 0 2.88 2.88" fill="none" class="hidden" xmlns="http://www.w3.org/2000/svg">
-            <path width="48" height="48" fill="white" fill-opacity="0.01" d="M0 0h2.88v2.88H0z"/>
+        <svg id="close-icon" width="25px" height="25px" viewBox="0 0 2.88 2.88" fill="none" class="hidden" xmlns="http://www.w3.org/2000/svg">
+            <path width="25" height="25" fill="white" fill-opacity="0.01" d="M0 0h2.88v2.88H0z"/>
             <path d="m0.78 1.8 0.72 -0.72 0.72 0.72" stroke="#000000" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </div>
   
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden absolute top-9 left-0 w-full bg-[var(--color-secondary)] rounded-b-lg items-center justify-center text-center shadow-4xl z-30 lg:hidden">
-      <ul>
-        <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/">Home</a></li>
-        <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/">Blog</a></li>
-        <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/services">Services</a></li>
-        <li><a class="text-[var(--color-primary)] hover:rounded-lg hover:text-[var(--color-background)] hover:bg-[var(--color-primary)] hover:underline decoration-[var(--color-primary)]" href="/contact">Contact</a></li>
-      </ul>
+    <div id="mobile-menu" class="flex absolute top-6 left-0 w-full bg-[var(--color-secondary)] rounded-b-lg items-center justify-center text-center shadow-4xl z-30 lg:hidden opacity-0 -translate-y-full pointer-events-none transition-all duration-300 ease-out">
+        <ul class="flex flex-col gap p-2 [&>li>a]:block [&>li>a]:w-32 [&>li>a]:px-6 [&>li>a]:py-3 [&>li>a]:text-center [&>li>a]:rounded-lg [&>li>a]:transition-all [&>li>a]:duration-200 shadow-4xl md:shadow-none rounded-lg ">
+            <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/">Home</a></li>
+            <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/blog">Blog</a></li>
+            <li><a class="hover:rounded-lg hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] hover:underline decoration-[var(--color-primary)]" href="/services">Services</a></li>
+            <li><a class="text-[var(--color-primary)] hover:rounded-lg hover:text-[var(--color-background)] hover:bg-[var(--color-primary)] hover:underline decoration-[var(--color-primary)]" href="/contact">Contact</a></li>
+        </ul>
     </div>
 </header>
 
@@ -48,19 +48,56 @@
       }
     }
 
+    function closeMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        if (!mobileMenu || !menuIcon || !closeIcon) return;
+
+        mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        
+        document.removeEventListener('click', closeMenuOnOutsideClick);
+    }
+
+    function closeMenuOnOutsideClick(e: MouseEvent) {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuToggle = document.querySelector('.menu');
+        
+        // Si hace clic fuera del menú y fuera del toggle, cierra el menú
+        if (mobileMenu && menuToggle && 
+            !mobileMenu.contains(e.target as Node) && 
+            !menuToggle.contains(e.target as Node)) {
+            closeMenu();
+        }
+    }
+
     function openMenu() {
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
         const closeIcon = document.getElementById('close-icon');
 
-        if (mobileMenu && menuIcon && closeIcon) {
-            const isHidden = mobileMenu.classList.contains('hidden');
+        if (!mobileMenu || !menuIcon || !closeIcon) return;
 
-            mobileMenu.classList.toggle('hidden', !isHidden);
-            menuIcon.classList.toggle('hidden', isHidden);
-            closeIcon.classList.toggle('hidden', !isHidden);
+        const isOpen = mobileMenu.classList.contains('translate-y-0');
+
+        if (isOpen) {
+            closeMenu();
+        } else {
+            // ABRIR (baja)
+            mobileMenu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+            mobileMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+
+            menuIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
+            
+            // Agregar listener para cerrar al hacer clic afuera
+            document.addEventListener('click', closeMenuOnOutsideClick);
         }
     }
-
     window.openMenu = openMenu;
 </script>

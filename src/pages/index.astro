@@ -12,33 +12,20 @@ import Products from '../components/Products.astro';
 ---
 
 <Layout>
-	<section id="hero" class="section h-auto md:h-screen w-screen items-center justify-center flex  z-1 ">
-		<Hero />
-	</section>
+	<Hero />
 
-	<section id="about" class="section bg-[var(--color-primary)] md:h-auto md:w-screen flex  z-0">
-		<About />
-	</section>
+	<About />
 
-	<section id="section" class="section bg-cover bg-center bg-no-repeat h-auto w-screen flex items-center justify-center z-1">
-		<Section />
-	</section>
+	<Section />
 
-	<section id="banner" class="section md:w-screen z-1">
-		<Banner />
-	</section>
+	<Banner />
 
-	<section id="section" class="section md:h-screen md:w-screen flex items-center justify-center z-1">
-		<Products />
-	</section>
+	<Products />
 
-	<section id="extra" class="section md:h-screen md:w-screen bg-[url('../background.svg')] flex z-1">
-		<Extra />
-	</section>
+	<Extra />
+
+	<Footer />
 	
-	<section id="footer" class="section bg-[var(--color-primary)] z-1">
-		<Footer />
-	</section>
 	
 	<button 
 		onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 

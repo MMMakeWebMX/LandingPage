@@ -4,88 +4,88 @@ import WaveMiddle from "../components/WaveMiddle.astro";
 ---
 
 <Layout>
-  <WaveMiddle>
-    <section class="flex flex-col md:flex-row items-center justify-center min-h-screen  text-[var(--color-secundary)] px-6 py-16">
+    <WaveMiddle>
+        <section class="flex flex-col md:flex-row items-center justify-center text-[var(--color-secundary)] px-10 py-12">
 
-        <!-- Left Side - Service Cards -->
-        <div class="bg-[var(--color-background)] text-[var(--color-accent)] p-10 md:w-1/2 grid gap-6 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none shadow-lg">
-      
-          <!-- Service Card 1 -->
-          <div class=" bg-[var(--color-background)] p-6 rounded-xl hover:bg-[var(--color-secondary)] hover:shadow-lg hover:text-[var(--color-background)] transition-all shadow-md">
-            <h3 class="text-xl font-bold mb-2">Web Development</h3>
-            <p class="text-sm">
-              High-performance websites tailored to your business needs.
-            </p>
-          </div>
-      
-          <!-- Service Card 2 -->
-          <div class=" bg-[var(--color-background)] p-6 rounded-xl hover:bg-[var(--color-secondary)] hover:shadow-lg hover:text-[var(--color-background)] transition-all shadow-md">
-            <h3 class="text-xl font-bold mb-2">Graphic Design</h3>
-            <p class="text-sm">
-              Eye-catching visuals, logos, and brand identity creation.
-            </p>
-          </div>
-      
-          <!-- Service Card 3 -->
-          <div class="bg-[var(--color-background)] p-6 rounded-xl hover:bg-[var(--color-secondary)] hover:shadow-lg hover:text-[var(--color-background)] transition-all shadow-md">
-            <h3 class="text-xl font-bold mb-2">Digital Consulting</h3>
-            <p class="text-sm">
-              Guidance and strategy to boost your online presence.
-            </p>
-          </div>
-      
-        </div>
-      
-        <!-- Right Side - Product Style Banner -->
-        <div class="bg-[var(--color-primary)] text-[var(--color-background)] p-10 md:w-1/2 flex flex-col justify-center rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none shadow-lg">
-          <div class="text-center space-y-6">
-            <h2 class="text-4xl font-bold">Our Premium Services</h2>
-            <p class="text-lg">
-              Discover solutions designed for growth, efficiency, and success.
-            </p>
-            <div class="flex flex-wrap justify-center">
-              <a href="/contact" class="bg-[var(--color-secondary)] text-xl bg-opacity-90 justify-items-center rounded-lg p-2 hover:-translate-y-1 hover:delay-150 hover:scale-110 hover:bg-[var(--color-background)] hover:text-[var(--color-primary)] hover:bg-opacity-100 transition duration-300 flex items-center gap-1">
-                Contact
-                <span>&rarr;</span>
-              </a>
+            <!-- Left Side - Service Cards -->
+            <div class="bg-[var(--color-background)] text-[var(--color-accent)] p-10 md:w-1/2 grid gap-4 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none shadow-lg">
+        
+                <!-- Service Card 1 -->
+                <div class=" bg-[var(--color-background)] p-6 rounded-xl hover:bg-[var(--color-secondary)] hover:shadow-lg hover:text-[var(--color-background)] transition-all shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p class="text-sm">
+                        High-performance websites tailored to your business needs.
+                    </p>
+                </div>
+            
+                <!-- Service Card 2 -->
+                <div class=" bg-[var(--color-background)] p-6 rounded-xl hover:bg-[var(--color-secondary)] hover:shadow-lg hover:text-[var(--color-background)] transition-all shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Graphic Design</h3>
+                    <p class="text-sm">
+                        Eye-catching visuals, logos, and brand identity creation.
+                    </p>
+                </div>
+            
+                <!-- Service Card 3 -->
+                <div class="bg-[var(--color-background)] p-6 rounded-xl hover:bg-[var(--color-secondary)] hover:shadow-lg hover:text-[var(--color-background)] transition-all shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Digital Consulting</h3>
+                    <p class="text-sm">
+                        Guidance and strategy to boost your online presence.
+                    </p>
+                </div>
+        
             </div>
-          </div>
-        </div>
-      
-    </section>
-  </WaveMiddle>
+        
+            <!-- Right Side - Product Style Banner -->
+            <div class="bg-[var(--color-primary)] text-[var(--color-background)] p-10 md:w-1/2 flex flex-col justify-center rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none shadow-lg">
+                <div class="text-center space-y-6">
+                    <h2 class="text-4xl font-bold">Our Premium Services</h2>
+                    <p class="text-lg">
+                    Discover solutions designed for growth, efficiency, and success.
+                    </p>
+                    <div class="flex flex-wrap justify-center">
+                    <a href="/contact" class="bg-[var(--color-secondary)] text-xl bg-opacity-90 justify-items-center rounded-lg p-2 hover:-translate-y-1 hover:delay-150 hover:scale-110 hover:bg-[var(--color-background)] hover:text-[var(--color-primary)] hover:bg-opacity-100 transition duration-300 flex items-center gap-1">
+                        Contact
+                        <span>&rarr;</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    </WaveMiddle>
 
-  <section id="services" class="bg-[var(--color-primary)] flex flex-col-reverse md:flex-row items-center justify-center px-4 md:px-20 py-10 gap-8 ">
-      <!-- Text -->
-      <div class="md:w-1/2 text-center md:text-left">
-        <h2 class="text-4xl font-bold text-[var(--color-secondary)] mb-4">Our Services</h2>
-        <p class="text-lg text-[var(--color-background)] leading-relaxed">
-          We provide modern digital solutions tailored to your needs. From web development to UX/UI design, our team is ready to help you turn your ideas into reality.
-        </p>
-      </div>
-    
-      <!-- Image -->
-      <div class="relative flex justify-center md:justify-start">
-          <!-- Image 1 -->
-          <img 
-            src="../image1.webp" 
-            alt="Team member 1"
-            class="w-32 h-32 md:w-40 md:h-40 rounded-full border-6 border-[var(--color-secondary)] shadow-lg relative z-30"
-          />
-        
-          <!-- Image 2 -->
-          <img
-            src="../image2.webp"
-            alt="Team member 2"
-            class="w-32 h-32 md:w-40 md:h-40 rounded-full border-6 border-[var(--color-secondary)] shadow-lg -ml-10 md:-ml-14 relative z-20"
-          />
-        
-          <!-- Image 3 -->
-          <img
-            src="../image3.webp"
-            alt="Team member 3"
-            class="w-32 h-32 md:w-40 md:h-40 rounded-full border-6 border-[var(--color-secondary)] shadow-lg -ml-10 md:-ml-14 relative z-10"
-          />
+    <section id="services" class="bg-[var(--color-primary)] flex flex-col-reverse md:flex-row items-center justify-center px-4 md:px-20 py-10 gap-8 ">
+        <!-- Text -->
+        <div class="md:w-1/2 text-center md:text-left">
+            <h2 class="text-4xl font-bold text-[var(--color-secondary)] mb-4">Our Services</h2>
+            <p class="text-lg text-[var(--color-background)] leading-relaxed">
+            We provide modern digital solutions tailored to your needs. From web development to UX/UI design, our team is ready to help you turn your ideas into reality.
+            </p>
         </div>
-  </section>
+        
+        <!-- Image -->
+        <div class="relative flex justify-center md:justify-start">
+            <!-- Image 1 -->
+            <img 
+                src="../image1.webp" 
+                alt="Team member 1"
+                class="w-32 h-32 md:w-40 md:h-40 rounded-full border-6 border-[var(--color-secondary)] shadow-lg relative z-30"
+            />
+            
+            <!-- Image 2 -->
+            <img
+                src="../image2.webp"
+                alt="Team member 2"
+                class="w-32 h-32 md:w-40 md:h-40 rounded-full border-6 border-[var(--color-secondary)] shadow-lg -ml-10 md:-ml-14 relative z-20"
+            />
+            
+            <!-- Image 3 -->
+            <img
+                src="../image3.webp"
+                alt="Team member 3"
+                class="w-32 h-32 md:w-40 md:h-40 rounded-full border-6 border-[var(--color-secondary)] shadow-lg -ml-10 md:-ml-14 relative z-10"
+            />
+        </div>
+    </section>
 </Layout>
